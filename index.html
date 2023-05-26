@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen'>
-    <script src='index.js'></script>
+   
 </head>
 <body>
 
@@ -78,7 +78,8 @@
         formControlEls.forEach(formControlEl => {
         if (formControlEl.value === '') {
           formControlEl.classList.add('error');
-          //alert('error');
+          formEl.style.backgroundColor = 'red';
+                   //alert('error');
           event.preventDefault();
         }
       });
